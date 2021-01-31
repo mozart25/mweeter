@@ -82,7 +82,7 @@ function mapStateToProps({ authedUser, users, tweets }, { id }) {
     return {
         authedUser,
         tweet: tweet
-            ? formatTweet(tweet, users[tweet.author], authedUser)
+            ? formatTweet(tweet, users[tweet.author], authedUser, parentTweet)
             : null
     }
 }
